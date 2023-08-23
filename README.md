@@ -8,7 +8,7 @@ Welcome to the eCommerce Store Website! This project is built using React, the F
 3.  Proceed to the payment page to complete the purchase.
 4. View order history and track previous orders.
 
-#Technologies Used
+# Technologies Used
  - React
  - Redux
  - Context Api
