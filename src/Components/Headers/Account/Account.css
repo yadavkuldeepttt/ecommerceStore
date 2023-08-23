@@ -1,0 +1,10 @@
+.account_login button {
+  padding: 0.2rem;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--black);
+}

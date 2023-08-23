@@ -1,0 +1,19 @@
+.home {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.home_container {
+  width: 75%;
+}
+@media screen and (max-width: 768px) {
+  .home_container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home_container {
+    width: 95%;
+  }
+}

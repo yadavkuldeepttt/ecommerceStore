@@ -1,0 +1,27 @@
+.topBrands {
+  padding: 1rem 0;
+  text-align: center;
+  overflow-x: scroll;
+}
+
+.topBrands_items {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(min-content, max-content));
+  padding: 4% 6% 4% 7%;
+  align-items: center;
+  gap: 50px;
+  background-color: #d2691e06;
+}
+.topBrands_items .brands_items {
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  height: 42vh;
+  text-align: center;
+}
+.topBrands_items .brands_items .title {
+  font-size: 14px;
+  color: var(--lightgreen);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}

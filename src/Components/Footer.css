@@ -1,0 +1,29 @@
+.footer .backTop {
+  width: 100%;
+  background-color: var(--lightgreen);
+  color: var(--white);
+  padding: 0.4rem 0;
+  text-align: center;
+  cursor: pointer;
+}
+.footer .backTop:hover {
+  background-color: var(--darkgreen);
+}
+.footer .footerContent .social_links {
+  background-color: var(--darkgreen);
+  list-style-type: none;
+  text-align: center;
+}
+.footer .footerContent .social_links li {
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+.footer .footerContent .social_links li a {
+  color: var(--white);
+}
+.footer .footerContent .social_links li a:hover {
+  color: var(--black);
+}
+.footer .fa-brands {
+  font-size: 1rem;
+}
