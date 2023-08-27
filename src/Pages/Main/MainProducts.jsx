@@ -5,7 +5,6 @@ import axios from "axios";
 import { apiActions } from "../../Store/productApiSlice";
 import "./MainProducts.css";
 import MyProduct from "./MainProduct";
-import { uiActions } from "../../Store/uiSlice";
 
 const MainProducts = () => {
   const dispatch = useDispatch();
@@ -18,9 +17,8 @@ const MainProducts = () => {
       try {
         const response = await axios.get("https://fakestoreapi.com/products");
         const data = response.data;
-        console.log(data);
         setApiData(data);
-        setFilteredData(data); // Initialize filteredData with all data
+        setFilteredData(data);
         dispatch(apiActions.apiData({ items: data }));
       } catch (error) {
         console.log("Error fetching data:", error);
@@ -30,11 +28,11 @@ const MainProducts = () => {
     fetchProductData();
   }, [dispatch]);
 
-  const filterProduct = (cat) => {
-    if (cat === "All") {
-      setFilteredData(apiData); // Show all products
+  const filterProduct = (choose) => {
+    if (choose === "All") {
+      setFilteredData(apiData);
     } else {
-      const updatedList = apiData.filter((x) => x.category === cat);
+      const updatedList = apiData.filter((x) => x.category === choose);
       setFilteredData(updatedList);
     }
   };

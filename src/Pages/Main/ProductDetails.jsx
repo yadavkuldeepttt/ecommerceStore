@@ -15,7 +15,7 @@ const ProductDetails = ({ product, onClose }) => {
         <p>
           Rating:&nbsp;{product.rating.rate}&nbsp;({product.rating.count})
         </p>
-        <h4>Price: &#8377;{product.price}</h4>
+        <h4>Price: ${product.price}</h4>
       </div>
     </div>
   );

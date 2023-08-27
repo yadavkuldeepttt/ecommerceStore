@@ -1,5 +1,5 @@
 .ordersShow__container {
-  margin: 2.3rem 15% 3rem 15%;
+  margin: 6.3rem 15% 3rem 15%;
 }
 
 .ordersShow__detail {
@@ -82,7 +82,7 @@
 
 @media only screen and (max-width: 64rem) {
   .ordersShow__container {
-    margin-top: 2.3rem;
+    margin-top: 6.3rem;
     margin-left: 0rem;
     width: 100%;
   }
@@ -113,7 +113,7 @@
 
 @media only screen and (max-width: 48rem) {
   .ordersShow__container {
-    margin-top: 2.3rem;
+    margin-top: 6.3rem;
     margin-left: 0rem;
     margin-right: 0rem;
   }

@@ -1,11 +1,7 @@
 import React from "react";
-import { useDispatch } from "react-redux";
-import { apiActions } from "../../Store/productApiSlice";
 import "./PopularData.css";
 
 const PopularData = () => {
-  const dispatch = useDispatch();
-
   const popularProductData = [
     {
       id: 0,
@@ -58,7 +54,6 @@ const PopularData = () => {
     },
   ];
 
-  // dispatch(apiActions.apiData({ items: popularProductData }));
   return (
     <div>
       <div className="popularProducts">
@@ -69,7 +64,7 @@ const PopularData = () => {
               <img src={data.image} alt="" height="100" width="100" />
               <h4>{data.webID}</h4>
               <p className="title">{data.title}</p>
-              <p>&#8377;{data.price}</p>
+              <p>${data.price}</p>
             </div>
           ))}
         </div>

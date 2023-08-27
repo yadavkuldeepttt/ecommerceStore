@@ -38,7 +38,7 @@ const OrdersDetail = () => {
       <div className="orders__detail">
         <div className="orders__container">
           <div className="orders__container__wrapper">
-            <h2 className="orders__container__title">Your Orders</h2>
+            <h3 className="orders__container__title">Your Orders</h3>
             <div className="orders__detail">
               {ordersDetail.map((item) => (
                 <OrderDetail

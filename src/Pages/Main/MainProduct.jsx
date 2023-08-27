@@ -6,11 +6,10 @@ import { useStateValue } from "../../Store/AuthContext/authContext";
 
 const MyProduct = ({ products, navigate }) => {
   const dispatch = useDispatch();
-  const [{ user }, dispatchContext] = useStateValue();
+  const [{ user }] = useStateValue();
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const handleProductClick = (product) => {
-    // navigate(`/${productCategory}/${productID}`);
     setSelectedProduct(product);
   };
 
@@ -38,7 +37,7 @@ const MyProduct = ({ products, navigate }) => {
           />
           <p className="category">{product.category}</p>
           <p className="title">{product.title}</p>
-          <h4>&#8377;{product.price}</h4>
+          <h4>${product.price}</h4>
           <button onClick={() => handleProductClick(product)}>
             View Details
           </button>

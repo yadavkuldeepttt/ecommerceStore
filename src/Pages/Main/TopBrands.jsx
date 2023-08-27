@@ -1,11 +1,7 @@
 import React from "react";
-import { useDispatch } from "react-redux";
-import { apiActions } from "../../Store/productApiSlice";
 import "./TopBrands.css";
 
 const TopBrands = () => {
-  const dispatch = useDispatch();
-
   const topBrands = [
     {
       id: 0,
@@ -33,7 +29,6 @@ const TopBrands = () => {
     },
   ];
 
-  // dispatch(apiActions.apiData({ items: topBrands }));
   return (
     <div>
       <div className="topBrands">
