@@ -13,14 +13,13 @@ import OrdersDetail from "./Components/Headers/orders/OrdersDetail";
 import OrdersShow from "./Components/Headers/orders/OrdersShow";
 
 function App() {
-  const payment = useSelector((state) => state.ui.payment);
+
   const productQuantity = useSelector((state) => state.cart.totalQuantity);
   const existSpinner = useSelector((state) => state.ui.spinner);
 
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
   return (
     <>
-      {/* <div className="container">{<Header />}</div> */}
       <Header />
       <Routes>
         <Route path="/" element={existSpinner ? <Spinner /> : <Home />} />
