@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
+
 import store from "./Store/store.jsx";
 import { StateProvider } from "./Store/AuthContext/authContext.jsx";
 import reducer, { initialState } from "./Store/AuthContext/reducer.jsx";

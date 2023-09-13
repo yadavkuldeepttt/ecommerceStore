@@ -21,11 +21,11 @@ const OrdersDetail = () => {
           productId: doc.id,
           ...doc.data(),
         }))
-        .filter((order) => order.email === user.email) // Filter orders for the current user
+        .filter((order) => order.email === user.email)
         .sort((a, b) => {
           const dateA = new Date(a.productPostDate);
           const dateB = new Date(b.productPostDate);
-          return dateB - dateA; // Sort in descending order
+          return dateB - dateA;
         });
 
       dispatch(orderActions.replaceOrder(transformedProduct));

@@ -8,7 +8,6 @@ import { cartActions } from "../../Store/cartSlice";
 import PaymentProduct from "./PaymentProduct";
 import PaymentRight from "./PaymentRight";
 import { db } from "../../firebase";
-// const Firebase_Domain = "https://yadavcart-c8410.firebaseio.com";
 
 const Payment = () => {
   const cartItems = useSelector((state) => state.cart.items);
@@ -149,10 +148,9 @@ const Payment = () => {
 
         dispatch(cartActions.cleanData());
         dispatch(uiActions.closeSpinner());
-        navigate("/", { replace: true });
+        // navigate("/", { replace: true });
       } catch (error) {
         console.error("Error adding order: ", error);
-        // Handle error as needed
       }
     }
   };

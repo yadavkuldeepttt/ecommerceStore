@@ -16,12 +16,13 @@
 
 .ordersShow__detail__left {
   display: flex;
-  width: 65%;
+  width: 57%;
 }
 
 .ordersShow__detail__left__info {
   color: whitesmoke;
   margin-right: 7rem;
+  text-align: start;
 }
 
 .ordersShow__detail__left__info span {
@@ -52,7 +53,7 @@
   color: whitesmoke;
   font-size: 2rem;
   margin-bottom: 1.4rem;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .ordersShow__detail__right > div {

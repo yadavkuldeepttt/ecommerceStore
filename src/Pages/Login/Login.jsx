@@ -2,7 +2,6 @@ import React from "react";
 import googleLogo from "../../assets/google.png";
 // import logo from "../../assets/crown.png";
 import "./Login.css";
-
 import { useStateValue } from "../../Store/AuthContext/authContext";
 import { useNavigate } from "react-router-dom";
 import { auth, provider } from "../../firebase";
